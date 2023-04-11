@@ -7,7 +7,7 @@ export default function App() {
       <Frames
         config={{
           publicKey: "pk_sbox_ogynfaoply5o6ksuw3d3hcee3ez",
-          schemeChoice: true
+          modes: ['cvv_optional'],
         }}
         cardTokenized={(e) => {
           alert(e.token);
@@ -16,7 +16,6 @@ export default function App() {
         <CardNumber />
         <div className="date-and-code">
           <ExpiryDate />
-          <Cvv />
         </div>
 
         <button
